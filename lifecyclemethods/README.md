@@ -28,8 +28,8 @@ Step 7: Save and run the application.
 ## PROGRAM:
 /*
 Program to print the text “Hello World”.
-Developed by: NIRANJANA DEVI S
-Registeration Number : 212221220036
+Developed by: Preethi.B
+Registeration Number : 212221220040
 */
 ## Activity_main.xml:
 
