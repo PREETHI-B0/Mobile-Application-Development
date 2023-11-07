@@ -5,20 +5,12 @@ To develop a application to add animation to imageview,move,blink,fade,clockwise
 Android Studio(Latest Version)
 ## ALGORITHM:
 Step 1: Open Android Studio and then click on File -> New -> New project.
-
 Step 2: Then type the Application name as AndroidAnimations and click Next.
-
 Step 3: Then select the Minimum SDK as shown below and click Next.
-
 Step 4: Then select the Empty Activity and click Next. Finally click Finish.
-
 Step 5: Design layout in activity_main.xml.
-
 Step 6: Create separate xml files for move,blink,fade,clockwise,zoom and slide operation.
-
-Step 7: in MainActivity file.
-
-Step 8: Save and run the application.
+Step 7: in MainActivity file.Step 8: Save and run the application.
 ## PROGRAM:
 ```
 /*
@@ -36,8 +28,7 @@ Registeration Number :212221220040
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <ImageView
+<ImageView
         android:id="@+id/imageView"
         android:layout_width="234dp"
         android:layout_height="149dp"
@@ -49,8 +40,7 @@ Registeration Number :212221220040
         app:layout_constraintVertical_bias="0.199"
         app:srcCompat="@drawable/img"
         android:contentDescription="@string/nothing" />
-
-    <Button
+<Button
         android:id="@+id/BTNblink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,8 +51,7 @@ Registeration Number :212221220040
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.629" />
-
-    <Button
+<Button
         android:id="@+id/BTNrotate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -289,9 +278,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // To add move animation
                 Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move);
-                imageView.startAnimation(animation);
-            }
-        });
         slideBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -312,16 +298,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // To stop the animation going on imageview
-                imageView.clearAnimation();
-            }
-        });
-    }
-
+                imageView.clearAnimation()
 }
 ~~~
 ## OUTPUT
-![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/20d42205-59ce-4007-bd57-701e3718559c)
-![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/9f3cc9d9-e847-4b1b-ac20-5d80dd201c3b)
-![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/3b8d9aee-7056-4f91-b95a-3fd68b683f7b)
+![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/e2b59f90-ec52-4cca-a1a7-37ff6926d325)
+![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/a6f3dfa2-9058-46ce-ba83-1f1c75c12296)
+![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/3ca1d98e-ce71-47db-bf74-136d9e6e7e97)
 ## RESULT
 Thus, a Simple Android Application to add animations to ImageView,Move,blink,fade,clockwise,zoom,slide operations using Android Studio is developed and executed successfully.
