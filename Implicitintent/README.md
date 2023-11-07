@@ -107,7 +107,6 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/743c7ad2-f98e-45f6-93ff-b960828c8272)
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/37786ba3-51e0-40f1-a943-ba592700fd6f)
 ## RESULT:
 Thus a Simple Android Application create a navigate button using Implicit Intent to display the google page using Android Studio is developed and executed successfully.
