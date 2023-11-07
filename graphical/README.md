@@ -18,6 +18,7 @@ Developed by: preethi.B
 Registeration Number : 212221220040
 */
 ## activity_main.xml:
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -37,7 +38,9 @@ Registeration Number : 212221220040
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+~~~
 ## MainActivity.java:
+~~~
 package com.example.basicgraphicalprimitives;
 import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Bitmap;
@@ -76,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         canvas.drawText("Line", 480, 800, paint);
         canvas.drawLine(520, 850, 520, 1150, paint);
 }
+~~~
 ## OUTPUT
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/48afff8e-def6-43b8-ac98-c6723cdc299a)
 ## RESULT
