@@ -58,11 +58,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        MyListAdapter adapter=new MyListAdapter(this, maintitle,imgid);
-        list=(ListView)findViewById(R.id.list);
-        list.setAdapter(adapter);
-
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
@@ -85,12 +80,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Place Your Forth Option Code",Toast.LENGTH_SHORT).show();
                 }
                 else if(position == 4) {
-
-                    Toast.makeText(getApplicationContext(),"Place Your Fifth Option Code",Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
 }
 ~~~
 ## mylist.xml:
@@ -150,7 +139,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 public class MyListAdapter extends ArrayAdapter<String> {
 
     private final Activity context;
@@ -164,11 +152,7 @@ public class MyListAdapter extends ArrayAdapter<String> {
         this.maintitle=maintitle;
         this.imgid=imgid;
     }
-    public View getView(int position,View view,ViewGroup parent) {
-        LayoutInflater inflater=context.getLayoutInflater();
-        View rowView=inflater.inflate(R.layout.mylist, null,true);
-
-        TextView titleText = (TextView) rowView.findViewById(R.id.title);
+   TextView titleText = (TextView) rowView.findViewById(R.id.title);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
 
         titleText.setText(maintitle[position]);
