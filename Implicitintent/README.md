@@ -1,33 +1,29 @@
+## Ex.No:3 Develop program to create a text field and a button “Navigate”. When you enter “www.google.com” and press navigate button it should open google page using Implicit Intents.
 ## AIM:
 To create a navigate button using Implicit Intent to display the google page using Android Studio.
 
-EQUIPMENTS REQUIRED:
+## EQUIPMENTS REQUIRED:
 Latest Version Android Studio
 
 ## ALGORITHM:
-Step 1: Open Android Stdio and then click on File -> New -> New project.
-
-Step 2: Then type the Application name as HelloWorld and click Next.
-
-Step 3: Then select the Minimum SDK as shown below and click Next.
-
-Step 4: Then select the Empty Activity and click Next. Finally click Finish.
-
-Step 5: Design layout in activity_main.xml.
-
-Step 6: Display message give in MainActivity file.
-
-Step 7: Save and run the application.
-
+Step1:Open Android Studio and create a new project.
+Step2:In the activity_main.xml file, design the layout with a TextInputEditText element for the text field and a Button element for the "Navigate" button.
+Step3:In the MainActivity.java file, retrieve references to the text field and the button using their IDs.
+Step4:Set an OnClickListener for the button.
+Step5:Inside the OnClickListener, retrieve the text entered in the text field using the getText() method.
+Step6:Create an Intent object to open a web page with the URL obtained from the text field.
+Step7:Set the action of the intent to Intent.ACTION_VIEW to indicate that the intent is used for viewing something.
+Step8:Set the data of the intent to the URL obtained from the text field using the Uri.parse() method.
+Step9:Set the type of the intent to "text/html" or "text/plain" to specify the type of data being viewed.
+Step10:Use the startActivity() method with the intent to start the activity that can handle the implicit intent.
+Step11:Run the application on an Android device or emulator to see the desired functionality.
 ## PROGRAM:
-~~~
 /*
 Program to print the text “Implicitintent”.
 Developed by: PREETHI.B
 Registeration Number : 212221220040
 */
-~~~
-## Activity_xml File:
+## activity_main.xml:
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -76,8 +72,7 @@ tools:context=".MainActivity">
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-## MainActivity.java File:
+## MainActivity.java:
 package com.example.intent_implementation;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -107,13 +102,8 @@ protected void onCreate(Bundle savedInstanceState) {
     });
 }
 }
-~~~
-~~~
-## OUTPUT
-![image](https://github.com/suryacse05/Mobile-Application-Development/assets/136311079/04b4718a-6182-4404-9458-62e395995069)
-![image](https://github.com/suryacse05/Mobile-Application-Development/assets/136311079/87fd9b57-75ca-4c60-872b-ffd90d76c4e5)
-![image](https://github.com/suryacse05/Mobile-Application-Development/assets/136311079/0561f95a-ee5d-4f28-8ea0-d9e3aa24e57c)
-
-
-RESULT
+## OUTPUT:
+![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/743c7ad2-f98e-45f6-93ff-b960828c8272)
+![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/37786ba3-51e0-40f1-a943-ba592700fd6f)
+## RESULT:
 Thus a Simple Android Application create a navigate button using Implicit Intent to display the google page using Android Studio is developed and executed successfully.
