@@ -24,6 +24,7 @@ Developed by: PREETHI.B
 Registeration Number : 212221220040
 */
 ## activity_main.xml:
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -72,7 +73,9 @@ tools:context=".MainActivity">
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+~~~
 ## MainActivity.java:
+~~~
 package com.example.intent_implementation;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -102,6 +105,7 @@ protected void onCreate(Bundle savedInstanceState) {
     });
 }
 }
+~~~
 ## OUTPUT:
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/743c7ad2-f98e-45f6-93ff-b960828c8272)
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/37786ba3-51e0-40f1-a943-ba592700fd6f)
