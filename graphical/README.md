@@ -17,7 +17,7 @@ Program to create and design an android application that draws basic graphical p
 Developed by: preethi.B
 Registeration Number : 212221220040
 */
-activity_main.xml:
+## activity_main.xml:
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -37,7 +37,7 @@ activity_main.xml:
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-MainActivity.java:
+## MainActivity.java:
 package com.example.basicgraphicalprimitives;
 import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Bitmap;
