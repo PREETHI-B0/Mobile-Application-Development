@@ -203,11 +203,6 @@ public class MyListAdapter extends ArrayAdapter<String> {
 }
 ~~~
 ## OUTPUT
-![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/097da1ee-19e3-4ff4-9750-52639293157c)
-
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/3365f0cf-8ea8-4736-849d-107f935eceaa)
-
-
-
 ## RESULT
 Thus a Simple Android Application to create and develop the application to display the place name with image using list view in android studio is developed and executed successfully.
