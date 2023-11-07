@@ -151,12 +151,10 @@ public class MyListAdapter extends ArrayAdapter<String> {
         this.context=context;
         this.maintitle=maintitle;
         this.imgid=imgid;
-    }
    TextView titleText = (TextView) rowView.findViewById(R.id.title);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
  return rowView;
-    };
-}
+    }
 ~~~
 ## OUTPUT
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/3365f0cf-8ea8-4736-849d-107f935eceaa)
