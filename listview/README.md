@@ -154,10 +154,7 @@ public class MyListAdapter extends ArrayAdapter<String> {
     }
    TextView titleText = (TextView) rowView.findViewById(R.id.title);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-
-        titleText.setText(maintitle[position]);
-        imageView.setImageResource(imgid[position]);
-        return rowView;
+ return rowView;
     };
 }
 ~~~
