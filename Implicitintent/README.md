@@ -1,11 +1,10 @@
 ## Ex.No:3 Develop program to create a text field and a button “Navigate”. When you enter “www.google.com” and press navigate button it should open google page using Implicit Intents.
 ## AIM:
 To create a navigate button using Implicit Intent to display the google page using Android Studio.
-
 ## EQUIPMENTS REQUIRED:
 Latest Version Android Studio
-
 ## ALGORITHM:
+~~~
 Step1:Open Android Studio and create a new project.
 Step2:In the activity_main.xml file, design the layout with a TextInputEditText element for the text field and a Button element for the "Navigate" button.
 Step3:In the MainActivity.java file, retrieve references to the text field and the button using their IDs.
@@ -17,6 +16,7 @@ Step8:Set the data of the intent to the URL obtained from the text field using t
 Step9:Set the type of the intent to "text/html" or "text/plain" to specify the type of data being viewed.
 Step10:Use the startActivity() method with the intent to start the activity that can handle the implicit intent.
 Step11:Run the application on an Android device or emulator to see the desired functionality.
+~~~
 ## PROGRAM:
 /*
 Program to print the text “Implicitintent”.
@@ -32,7 +32,6 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".MainActivity">
-
 <TextView
     android:id="@+id/textView"
     android:layout_width="wrap_content"
@@ -44,7 +43,6 @@ tools:context=".MainActivity">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     tools:ignore="ExtraText" />
-
 <EditText
     android:id="@+id/E1"
     android:layout_width="wrap_content"
@@ -58,7 +56,6 @@ tools:context=".MainActivity">
     app:layout_constraintHorizontal_bias="0.791"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
-
 <Button
     android:id="@+id/button"
     android:layout_width="wrap_content"
@@ -70,32 +67,25 @@ tools:context=".MainActivity">
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.462"
     app:layout_constraintStart_toStartOf="parent" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 ~~~
 ## MainActivity.java:
 ~~~
 package com.example.intent_implementation;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 public class MainActivity extends AppCompatActivity {
 Button button;
 EditText e1;
-
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-
     button = findViewById(R.id.button);
     e1 = findViewById(R.id.E1);
     button.setOnClickListener(view -> {
