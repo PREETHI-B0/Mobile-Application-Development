@@ -12,13 +12,6 @@ Step 5: Design layout in activity_main.xml.
 Step 6: Create separate xml files for move,blink,fade,clockwise,zoom and slide operation.
 Step 7: in MainActivity file.Step 8: Save and run the application.
 ## PROGRAM:
-```
-/*
-Program to display animation operation”.
-Developed by:PREETHI.B
-Registeration Number :212221220040
-*/
-```
 ## activity_main.xml:
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
@@ -228,9 +221,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Button blinkBTN, rotateBTN, fadeBTN, moveBTN, slideBTN, zoomBTN, stopBTN;
@@ -303,7 +293,6 @@ public class MainActivity extends AppCompatActivity {
 ~~~
 ## OUTPUT
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/e2b59f90-ec52-4cca-a1a7-37ff6926d325)
-![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/a6f3dfa2-9058-46ce-ba83-1f1c75c12296)
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/3ca1d98e-ce71-47db-bf74-136d9e6e7e97)
 ## RESULT
 Thus, a Simple Android Application to add animations to ImageView,Move,blink,fade,clockwise,zoom,slide operations using Android Studio is developed and executed successfully.
