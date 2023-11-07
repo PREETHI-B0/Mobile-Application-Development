@@ -93,8 +93,7 @@ Registeration Number :212221220040
         android:layout_marginTop="16dp"
         android:text="Result: "
         android:textSize="18sp" />
-
-    </LinearLayout>
+</LinearLayout>
 ~~~
 ## MAIN CODE:
 ~~~
@@ -175,16 +174,7 @@ Registeration Number :212221220040
 ~~~
 ## OUTPUT
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/0f1385a5-cbb8-484e-8ff8-bb8d4d34b5fd)
-![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/8e515275-e75b-4641-bb32-f079dd7a8d85)
-![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/e57b8226-eee8-48b2-b8ab-173efb2795f0)
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/1ed9534a-2cd7-4de6-ba5d-820f7240ec8a)
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/773aa6bc-97b1-4679-82e4-e11a2f63ea7f)
-
-
-
-
-
-
-
 ## RESULT
 Thus a Simple Android Application develop a program to create simple calculator in Android Studio is developed and executed successfully.
