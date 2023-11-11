@@ -81,9 +81,6 @@ activity_main.xml:
         android:inputType="phone"
         android:text="@string/phone_number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:autofillHints=""
         tools:ignore="LabelFor" />
 
@@ -95,10 +92,7 @@ activity_main.xml:
         android:ems="10"
         android:inputType="text"
         android:text="@string/type_message"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number"
+        app:layout_constraintEnd_toEndOf="parent
         android:autofillHints=""
         tools:ignore="LabelFor" />
 
@@ -109,10 +103,6 @@ activity_main.xml:
         android:layout_marginBottom="316dp"
         android:text="@string/send"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message"
         app:layout_constraintVertical_bias="0.452" />
 
     <TextView
@@ -123,9 +113,6 @@ activity_main.xml:
         android:textColor="@color/purple_500"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.161" />
 
@@ -145,7 +132,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 public class MainActivity extends AppCompatActivity {
     private EditText number,message;
     private Button send;
@@ -153,12 +139,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         number = findViewById(R.id.number);
         message = findViewById(R.id.message);
         send = findViewById(R.id.send);
-
-        send.setOnClickListener(new View.OnClickListener() {
+send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
@@ -166,10 +150,7 @@ public class MainActivity extends AppCompatActivity {
                     PackageManager.PERMISSION_GRANTED){sendSMS();
                     }else {
                         requestPermissions(new String[]{Manifest.permission.SEND_SMS},1);
-                    }
-                }
-            }
-        });
+                    }  });
     }
     private void sendSMS(){
         String phoneNo = number.getText().toString().trim();
