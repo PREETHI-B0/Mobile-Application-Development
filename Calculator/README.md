@@ -139,8 +139,8 @@ protected void onCreate(Bundle savedInstanceState) {
     });
 }
 }
-OUTPUT:
+## OUTPUT:
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/cc33c3c8-f37e-406f-b9d6-f327c90f7622)
 ![image](https://github.com/PREETHI-B0/Mobile-Application-Development/assets/136311079/49c12d50-0708-495b-a712-2316ba01eb85)
-RESULT:
+## RESULT:
 Thus a Simple Android Application develop a program to create simple calculator in Android Studio is developed and executed successfully.
